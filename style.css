@@ -44,9 +44,6 @@ h1 {
     margin-top: 3em;
 }
 
-
-
-
 main {
     margin-top: 2em;
     margin-left: 1.6em;
@@ -55,9 +52,6 @@ main {
     text-align: justify;
     min-height: 28em;
 }
-
-
-
 
 
 /* Media query for larger screens (PC) */
@@ -70,9 +64,7 @@ main {
         font-size: 50px;
     }
     
-    .songs {
-        margin-top: 4em;
-    }
+    
    
    
     p {
@@ -82,6 +74,10 @@ main {
     body {
         margin-left: 5em;
         margin-right: 5em;
+    }
+
+    .songs {
+        margin-top: 4em;
     }
 
     .connect {
