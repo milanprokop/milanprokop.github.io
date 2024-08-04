@@ -27,14 +27,6 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-img {
-    width: 50px;
-    border-radius: 50%;
-}
-
-#header-image {
-    grid-column: 1; 
-}
 
 h1 {
     margin: 0;
@@ -45,10 +37,9 @@ h1 {
 
 
 
-
-
-
-
+.connect {
+    padding-top: 3em;
+}
 
 main {
     margin-top: 2em;
@@ -72,11 +63,7 @@ main {
     h1 {
         font-size: 50px;
     }
-    
-    img {
-        width: 120px;
-        
-    }
+
    
     p {
         font-size: 20px;
