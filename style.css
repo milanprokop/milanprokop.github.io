@@ -2,18 +2,19 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: white;
-    position: relative; /* Establish a containing block for absolute positioning */
-    min-height: 100vh; /* Ensures the body takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
 }
 
 body::before {
     content: '';
-    position: fixed; /* Fixes the pseudo-element in the viewport */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -22,83 +23,64 @@ body::before {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: -1; /* Ensures the pseudo-element is behind the body content */
+    z-index: -1;
 }
 
-
-
 header {
-
     text-align: center;
     padding: 1.5em;
-    display: flex;
-    align-items: center;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-
 h1 {
     margin: 0;
-    text-align: center;
     font-size: 40px;
     grid-column: 2;
 }
 
-.songs {
-    margin-top: 2em;
+main {
+    flex: 1;
+    margin: 2em 1.6em;
+    text-align: justify;
+    padding-bottom: 2em;
+}
+
+.intro-text {
+    margin-bottom: 2em;
+}
+
+.song {
+    margin-bottom: 2em;
 }
 
 .connect {
-    margin-top: 3em;
+    margin-bottom: 2em;
 }
-
-main {
-    margin-top: 2em;
-    margin-left: 1.6em;
-    margin-right: 2em;
-    padding-bottom: 2em;
-    text-align: justify;
-    min-height: 28em;
-}
-
 
 /* Media query for larger screens (PC) */
 @media (min-width: 768px) {
     header {
         padding: 2em;
     }
-    
+
     h1 {
         font-size: 50px;
     }
-    
-    
-   
-   
-    p {
+
+    .intro-text p,
+    .connect p,
+    .song p {
         font-size: 20px;
     }
 
     body {
-        margin-left: 5em;
-        margin-right: 5em;
+        margin: 0 5em;
     }
-
-    .songs {
-        margin-top: 4em;
-    }
-
-    .connect {
-        margin-top: 7em;
-    }
-     
 }
 
 footer {
     text-align: center;
-    padding-bottom: 1em;
-    bottom: 0;
-    width: 100%;
-  }
-
+    padding: 1em 0;
+    background: rgba(0, 0, 0, 0.5); /* Optional: to ensure footer visibility */
+}
