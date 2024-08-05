@@ -56,7 +56,18 @@ main {
 
 .connect {
     margin-bottom: 2em;
+    margin-top: 4em;
 }
+
+.info {
+    color: white; /* Standardfarbe für den restlichen Text */
+}
+
+.label {
+    color: rgb(255, 219, 119); /* Farbe nur für "Instagram", "Email" und "Mobile" */
+}
+
+
 
 /* Media query for larger screens (PC) */
 @media (min-width: 768px) {
