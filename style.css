@@ -10,6 +10,12 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
 }
 
 body::before {
