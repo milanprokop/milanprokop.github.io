@@ -32,17 +32,31 @@ body::before {
     z-index: -1;
 }
 
-header {
+.bigheading {
     text-align: center;
-    padding: 1.5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    
 }
 
+ul {
+    padding-left: 1em;
+}
+
+
 h1 {
-    margin: 0;
     font-size: 40px;
     grid-column: 2;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+}
+
+h3{
+    font-style: italic;
+    font-size: 20px;
 }
 
 main {
@@ -77,14 +91,20 @@ main {
 
 /* Media query for larger screens (PC) */
 @media (min-width: 768px) {
-    header {
-        padding: 2em;
-    }
 
+   
+    
     h1 {
-        font-size: 50px;
+        font-size: 55px;
     }
 
+    .intro-text {
+        margin-bottom: 2em;
+        max-width: 90em;
+    }
+    
+
+    .services p,
     .intro-text p,
     .connect p,
     .song p {
